@@ -89,3 +89,5 @@ These are images and their thresholded heatmaps.
 
 The pipeline might fail with weirdly colored cars (striped for example) or in different road conditions, such as rain or snow that might interfere with the images. Also ocassionally there are 2 bounding boxes around car instead of one- the thresholding of the heatmap cound be improved to have a blur effect -- not turn to zero if many nearby pixels are positive in heat map i.e. region in middle of car.  Also the bounding boxes are jumpy from frame to frame, this could be improved by averaging the position of bounding box and heat map over time. 
 
+In the video, the really far away cars weren't picked up. It might be good to use an even smaller window size just right along the horizon for these vehicles.
+
